@@ -1,0 +1,15 @@
+public int calculaPrimos(int[] v){
+        int soma = 0;
+        for(int i = 0; i < v.length; i++){
+            int primo = 0;
+            for(int x = 1; x<=v[i]; x++){
+                if(v[i] % x ==0){
+                    primo++;
+                }
+            }
+            if(primo == 2){
+                soma += v[i];
+            }
+        }
+        return soma;
+    }
